@@ -1,0 +1,148 @@
+/* Estilos da pagina index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+h1{
+    font-family: 'Slabo 27px', serif;
+}
+
+h2{
+    font-family: 'Slabo 27px', serif;
+}
+
+p{
+    font-family: 'Slabo 27px', serif;
+}
+.center {
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#menu {
+    position: fixed;
+    background-color:#86C1C4;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding: 30px;
+    box-shadow: 0 1px 3px black;
+    opacity: 0.8;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+  }
+
+
+#menu li{
+    display: inline;
+    padding: 20px;
+
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+}
+
+#menu li a:hover{
+    color: #FAD8C5;
+}
+
+.p-30{
+    padding: 30px;
+    margin-right: 10px;
+}
+
+.br-50{
+    border-radius: 50%;
+}
+
+.wh{
+    width: 300px;
+    height: 300px;
+}
+
+.tm-social{
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+}
+
+.estilo{
+    flex-flow: row;
+    background-color:#FAD8C5;
+    padding: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: -2.5em;
+    margin-bottom: -0.6em;
+}
+
+.estilo2{
+    flex-flow: row;
+    background-color:#FAD8C5;
+    padding: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-bottom: 500px;
+    margin-top: -2.5em;
+    margin-bottom: -0.6em;
+}
+.margem{
+    color: #DB9169;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+    body {
+        background-color:#ea8685;
+        flex-flow: row;
+        
+        /*min-width: 1000px;
+        min-height: 400px*/
+    }
+    .config-img {
+        max-width:600px;
+        max-height:350px;
+        width: auto;
+        height: auto;
+        box-shadow: 0 1px 10px #86C1C4;
+    }
+    /*Filter styles*/
+    .saturate { filter: saturate(3); }
+    .grayscale { filter: grayscale(100%); }
+    .contrast { filter: contrast(160%); }
+    .brightness { filter: brightness(0.25); }
+    .blur { filter: blur(3px); }
+    .invert { filter: invert(100%); }
+    .sepia { filter: sepia(100%); }
+    .huerotate { filter: hue-rotate(180deg); }
+    .rss.opacity { filter: opacity(50%); }
+
+    .icone:hover{
+        filter: invert(100%);
+    }
+
+    nav.dropmenu{
+        display: inline-block;
+    }
+
+/* Estilos da pagina index.html*/
+
+.ml-100{
+    margin-left: 100px;
+}
+.borda{
+    box-shadow: 0 1px 3px #86C1C4;
+}
+

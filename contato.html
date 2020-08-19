@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <nav class="dropmenu">
+    <ul id="menu">
         <li> 
           <a href="index.html"> Home </a> <!--target="_blank" = abri outra aba-->
         </li>
@@ -15,27 +17,65 @@
           <a href="contato.html"> Contato </a>
        </li>  
       </ul>
+    </nav>
 
-    <h1>Entre em contato comigo</h1>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+<div class="estilo2">
+    
+    <h1 class="center">Entre em contato comigo</h1>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email">
+    <div class="container">
+        <div>
+            <form>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id='txtNome'></div>
+                <br>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
+                <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="8"></textarea>
+                <br>
+        
+                <button>Enviar</button>
+            </form>
+         
+        </div>
+        <div class="ml-100">
+    
+            <p>Seul, Coreia do sul</p>
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202404.9589321657!2d126.84946246805532!3d37.56501723940089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2sSeul%2C%20Coreia%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1597719080291!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    
+</div>
+<hr>
 
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
+<footer>
 
-        <button>Enviar</button>
-    </form>
+    <div class="container" >
+        <a href="https://www.facebook.com/" target="_blank">
+            <img class="tm-social icone" src="assets/img/facebook.png" alt="Logo Facebook">
+        </a>
+        
+        <a href="https://twitter.com/home" target="_blank">
+            <img class="tm-social icone" src="assets/img/twitter.png" alt="Logo twitter">
+        </a>
+        
+        <a href="https://www.instagram.com/" target="_blank">
+            <img class="tm-social icone" src="assets/img/instagram.png" alt="Logo instagram"> 
+        </a>
+        
+    </div>
+   <p class="center">
+    Todos os direitos reservados: LeticiaSena &copy;
+   </p>
+</footer>  
 
-    <h2>Endereço:</h2>
-
-    <p>Av. Paulista, 1000</p>
-    <p>São Paulo - SP</p>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696295942!2d-46.653905484475615!3d-23.564611167598713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1597679247755!5m2!1spt-BR!2sbr" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<script src="assets/js/script.js"></script>
+    
 </body>
 </html>
